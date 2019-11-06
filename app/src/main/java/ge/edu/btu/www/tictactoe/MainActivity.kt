@@ -73,59 +73,27 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun checkWinner() {
-        if (button00.text == "X" && button01.text == "X" && button02.text == "X") {
-            Toast.makeText(this, "მოიგო x მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        } else if (button00.text == "0" && button01.text == "0" && button02.text == "0") {
-            Toast.makeText(this, "მოიგო 0 მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        } else if (button10.text == "X" && button11.text == "X" && button12.text == "X") {
-            Toast.makeText(this, "მოიგო x მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        } else if (button10.text == "0" && button11.text == "0" && button12.text == "X0") {
-            Toast.makeText(this, "მოიგო 0 მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        } else if (button20.text == "X" && button21.text == "X" && button22.text == "X") {
-            Toast.makeText(this, "მოიგო x მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        } else if (button20.text == "0" && button21.text == "0" && button22.text == "0") {
-            Toast.makeText(this, "მოიგო 0 მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        } else if (button00.text == "X" && button11.text == "X" && button22.text == "X") {
-            Toast.makeText(this, "მოიგო x მოთამაშემ", Toast.LENGTH_SHORT).show()
-        } else if (button00.text == "0" && button11.text == "0" && button22.text == "0") {
-            Toast.makeText(this, "მოიგო 0 მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        } else if (button02.text == "X" && button11.text == "X" && button20.text == "X") {
-            Toast.makeText(this, "მოიგო x მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        } else if (button02.text == "0" && button11.text == "0" && button20.text == "0") {
-            Toast.makeText(this, "მოიგო 0 მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        } else if (button00.text == "X" && button10.text == "X" && button20.text == "X") {
-            Toast.makeText(this, "მოიგო x მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        } else if (button00.text == "0" && button10.text == "0" && button20.text == "0") {
-            Toast.makeText(this, "მოიგო 0 მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        } else if (button01.text == "X" && button11.text == "X" && button21.text == "X") {
-            Toast.makeText(this, "მოიგო x მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        } else if (button01.text == "0" && button11.text == "0" && button22.text == "0") {
-            Toast.makeText(this, "მოიგო 0 მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        } else if (button02.text == "X" && button12.text == "X" && button22.text == "X") {
-            Toast.makeText(this, "მოიგო x მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        } else if (button02.text == "0" && button12.text == "0" && button22.text == "0") {
-            Toast.makeText(this, "მოიგო 0 მოთამაშემ", Toast.LENGTH_SHORT).show()
-            ResetGame()
-        }
 
+        if (button00.text.isNotEmpty() && button00.text == button01.text && button01.text == button02.text) {
+            Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
+        } else if (button10.text.isNotEmpty() && button10.text == button11.text && button11.text == button12.text) {
+            Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
+        } else if (button20.text.isNotEmpty() && button20.text == button21.text && button21.text == button22.text) {
+            Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
+        } else if (button00.text.isNotEmpty() && button00.text == button10.text && button00.text == button20.text) {
+            Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
+        } else if (button01.text.isNotEmpty() && button01.text == button11.text && button11.text == button21.text) {
+            Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
+        } else if (button02.text.isNotEmpty() && button02.text == button12.text && button12.text == button22.text) {
+            Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
+        } else if (button00.text.isNotEmpty() && button00.text == button11.text && button11.text == button22.text) {
+            Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
+        } else if (button02.text.isNotEmpty() && button11.text == button02.text && button11.text == button20.text) {
+            Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
+        }
 
         if (button00.text.isNotEmpty() && button01.text.isNotEmpty() && button02.text.isNotEmpty() && button10.text.isNotEmpty() && button11.text.isNotEmpty() && button12.text.isNotEmpty() && button20.text.isNotEmpty() && button21.text.isNotEmpty() && button22.text.isNotEmpty()) {
             Toast.makeText(this, "ფრედ დამთავრდა, მაგრამ არაუშავს", Toast.LENGTH_LONG).show()
-            ResetGame()
         }
 
     }
