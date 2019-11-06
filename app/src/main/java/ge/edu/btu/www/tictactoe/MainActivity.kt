@@ -77,19 +77,19 @@ class MainActivity : AppCompatActivity() {
         if (button00.text.isNotEmpty() && button00.text == button01.text && button01.text == button02.text) {
             Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
         } else if (button10.text.isNotEmpty() && button10.text == button11.text && button11.text == button12.text) {
-            Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "მოიგო ${button10.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
         } else if (button20.text.isNotEmpty() && button20.text == button21.text && button21.text == button22.text) {
-            Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "მოიგო ${button20.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
         } else if (button00.text.isNotEmpty() && button00.text == button10.text && button00.text == button20.text) {
             Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
         } else if (button01.text.isNotEmpty() && button01.text == button11.text && button11.text == button21.text) {
-            Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "მოიგო ${button01.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
         } else if (button02.text.isNotEmpty() && button02.text == button12.text && button12.text == button22.text) {
-            Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "მოიგო ${button02.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
         } else if (button00.text.isNotEmpty() && button00.text == button11.text && button11.text == button22.text) {
             Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
         } else if (button02.text.isNotEmpty() && button11.text == button02.text && button11.text == button20.text) {
-            Toast.makeText(this, "მოიგო ${button00.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "მოიგო ${button02.text} მოთამაშემ", Toast.LENGTH_SHORT).show()
         }
 
         if (button00.text.isNotEmpty() && button01.text.isNotEmpty() && button02.text.isNotEmpty() && button10.text.isNotEmpty() && button11.text.isNotEmpty() && button12.text.isNotEmpty() && button20.text.isNotEmpty() && button21.text.isNotEmpty() && button22.text.isNotEmpty()) {
